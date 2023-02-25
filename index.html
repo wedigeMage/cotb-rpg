@@ -2,11 +2,8 @@
 <html>
 <body>
 <h1>View ur stats here</h1>
-<form>
   <label for="username">username:</label>
-  <input type="text" id="username" name="username"><br><br>
-  <input type="submit" value="Submit" onsubmit="window.location.href('/'+document.getElementById('username'))+'.html'">
-</form>
+  <textarea type="text" id="username" name="username" onchange="window.location.href('/'+document.getElementById('username'))+'.html'"></textarea><br><br>
 <p>you can find anyone's stats</p>
 </body>
 </html>
