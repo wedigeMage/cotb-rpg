@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <body>
+   <p id="text"></p>
+  </body>
+<script>
+const person = {
+username: "DEFAULT",
+cash: 0,
+flux: 16,
+maxHealth: 32,
+maxMana: 16,
+level: 1,
+class:"None",
+statIncreases:{
+rAttack:0,
+mAttack:0,
+rDef:0,
+mDef:0,
+agility:0,
+},
+attacks: [
+punch: {
+power: 15,
+manaCost: 0,
+description:"PUNCH THE FOE"
+}
+],
+inventory:[
+healingPotion: {
+count: 1,
+description: "RESTORE ALL HP. IF IN BATTLE, RESTORE 30% HP"
+} 
+]
+};
+document.getElementById("text").textContent = person;
+</script>
+</html>
